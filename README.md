@@ -46,7 +46,7 @@ Things you may want to cover:
 - has_many :groups_user
 - has_many :users, through: :groups_users
 
-## postsテーブル
+## messagesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
