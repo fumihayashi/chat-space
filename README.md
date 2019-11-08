@@ -28,8 +28,7 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|password|string|null: fales|
-|email|strings|null: fales|
+
 
 ### Association
 - has_many :posts
