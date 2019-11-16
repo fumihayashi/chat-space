@@ -1,12 +1,17 @@
 .chat-side
-  .chat-header
+  .side-header
     .side-header__box
       %p.side-header__box__user-name username
-    =link_to "#", class: "contents__btn" do
-      = icon('fab', 'edit')
-    =link_to "#", class: "contents__btn" do
-      = icon('fab', 'cog')
+      %ul.side-header__box__menu
+        %li<
+        =link_to "#" do
+          = icon('fab', 'edit')
+        %li<
+        =link_to "#" do
+          = icon('fab', 'cog')
+
   .groups
-  =link_to "#", class: "group" do
-    %p.group__grope-name groupname
-    %p.group__latest-message まだメッセージがありません
+  =link_to "#" do
+    .group
+      %p.group__grope-name groupname
+      %p.group__latest-message まだメッセージがありません
