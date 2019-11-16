@@ -1,0 +1,12 @@
+.chat-side
+  .chat-header
+    .side-header_box
+      %p.side-header_box_user-name username
+    =link_to "#", class: "contents__btn" do
+      = icon('fab', 'edit')
+    =link_to "#", class: "contents__btn" do
+      = icon('fab', 'cog')
+  .groups
+  =link_to "#", class: "group" do
+    %p.group_grope-name groupname
+    %p.group_latest-message まだメッセージがありません
