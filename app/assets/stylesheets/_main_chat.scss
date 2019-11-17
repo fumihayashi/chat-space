@@ -2,7 +2,7 @@
   width: calc(100vw - 300px);
   height: 100vh;
   a{
-    color: #38aef0;
+    color: $btn-color;
   }
   .main-header{
     height: 100px;
@@ -28,7 +28,7 @@
       line-height: 40px;
       padding: 0 20px;
       margin-top: 28px;
-      border: solid 1px #38aef0;
+      border: solid 1px $btn-color;
     }
   }
   .messages{
@@ -41,7 +41,7 @@
         display: flex;
         margin-bottom: 10px;
         &__talker{
-          color: #434a54;
+          color: $message-color;
           font-size: 16px;
           font-weight: bold;
         }
@@ -51,7 +51,7 @@
           margin-left: 10px;
         }
       &__text{
-        color: #434a54;
+        color: $message-color;
         font-size: 14px;
       }
       }
@@ -70,7 +70,7 @@
           height: 50px;
           width: 100%;
           padding-left: 10px;
-          color: #434a54;
+          color: $message-color;
           border-style: none;
         }
         &__image{

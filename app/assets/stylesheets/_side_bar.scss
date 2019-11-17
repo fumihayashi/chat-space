@@ -4,7 +4,7 @@
 
 a{
   text-decoration: none;
-  color: #FFFFFF;
+  color: $side_bar-color;
 }
 
 .wrapper {
@@ -13,9 +13,9 @@ a{
 
 .chat-side {
   width: 300px;
-  font-weight: bold
+  font-weight: bold;
   a{
-    color: #FFFFFF
+    color: $side_bar-color;
   }
   .side-header{
    background-color: #253141;
@@ -24,7 +24,7 @@ a{
    align-items: center;
    padding: 0 20px;
    &__box{
-     color: #FFFFFF;
+     color: $side_bar-color;
      display: flex;
      justify-content: space-between;
      width :100%;
@@ -43,7 +43,7 @@ a{
     padding: 20px 20px 0;
     overflow: scroll;
     .group{
-      color: #FFFFFF;
+      color: $side_bar-color;
       margin-bottom: 40px;
       &__grope-name{
         font-size: 15px;
