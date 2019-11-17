@@ -1,6 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
 a{
   text-decoration: none;
 }
+
+.wrapper {
+  display: flex;
+}
+
 .chat-side {
   width: 300px;
   font-weight: bold

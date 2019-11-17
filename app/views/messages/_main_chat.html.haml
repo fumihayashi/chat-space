@@ -8,17 +8,17 @@
           username
     = link_to "#" do
       .main-header__edit-btn Edit
-.messages
-  .message
-    .message__upper-info
-      %p.message__upper-info__taker username
-      %p.message__upper-info__data 2019/11/16(Sat) 00:00:00
-    %p.message.text message
-.form
-  %form.new_message
-    .input-box
-      %input.input-box__text{:name => "message", :placeholder => "type a message", :type => "text_field"}
-      %label.input-box__image
+  .messages
+    .message
+      .message__upper-info
+        %p.message__upper-info__taker username
+        %p.message__upper-info__data 2019/11/16(Sat) 00:00:00
+      %p.message.text message
+  .form
+    %form.new_message
+      .input-box
+        %input.input-box__text{:name => "message", :placeholder => "type a message", :type => "text_field"}
+        %label.input-box__image
         = icon 'fas', 'image'
         %input{:name => "mesaage_image", :type => "file"}
-    %input.submit-btn{:name => "submit", :type => "submit", :value => "send"} 
+      %input.submit-btn{:name => "submit", :type => "submit", :value => "send"} 
