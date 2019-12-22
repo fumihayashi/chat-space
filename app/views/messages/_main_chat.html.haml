@@ -13,11 +13,20 @@
         %p.message__upper-info__talker username
         %p.message__upper-info__data 2019/11/16(Sat) 00:00:00
       %p.message__upper-info__text message
+  -# .form
+  -#   %form.new_message
+  -#     .input-box
+  -#       %input.input-box__text{name: "message", placeholder: "type a message", type: "text_field"}
+  -#       %label.input-box__image
+  -#         = icon 'fas', 'image'
+  -#         %input{name: "mesaage_image ", type: "file"}
+  -#     %input.submit-btn{name: "submit", type: "submit", value: "send"} 
+
   .form
-    %form.new_message
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: 'form__message', placeholder: 'type a message'
       .input-box
-        %input.input-box__text{name: "message", placeholder: "type a message", type: "text_field"}
-        %label.input-box__image
-          = icon 'fas', 'image'
-          %input{name: "mesaage_image ", type: "file"}
-      %input.submit-btn{name: "submit", type: "submit", value: "send"} 
+        = f.label :image, class: 'form__mask__image' do
+          = icon('fas', 'image', class: 'icon')
+          = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'form__submit'
