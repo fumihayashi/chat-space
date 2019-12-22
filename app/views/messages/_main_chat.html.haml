@@ -8,11 +8,8 @@
     = link_to "#" do
       .main-header__edit-btn Edit
   .messages
-    .message
-      .message__upper-info
-        %p.message__upper-info__talker username
-        %p.message__upper-info__data 2019/11/16(Sat) 00:00:00
-      %p.message__upper-info__text message
+    = render @messages
+    
   -# .form
   -#   %form.new_message
   -#     .input-box
