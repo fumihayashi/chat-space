@@ -6,7 +6,7 @@
       %ul.main-header__left-box__member-list 
         Member:
         - @group.group_users.each do |group_user|
-    = link_to "#" do
+    = link_to edit_group_path(@group.id) do
       .main-header__edit-btn Edit
   .messages
     = render @messages
