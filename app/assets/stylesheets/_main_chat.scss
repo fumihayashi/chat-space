@@ -21,6 +21,9 @@
         display: flex;
         font-size: 12px;
         color: #999999;
+        li{
+          padding: 0 5px; 
+        }
       }
     }
     &__edit-btn{
@@ -64,9 +67,10 @@
     background-color: #ddd;
     .new_message{
       display: flex;
+      width: 100%;
       .input-box{
         position: relative;
-        width: 950px;
+        width: 100%;
         &__text{
           height: 50px;
           width: 100%;
